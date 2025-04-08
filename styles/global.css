@@ -100,16 +100,19 @@ body {
 .logo {
   font: var(--font-logo);
   color: var(--accent-pink);
+  margin-bottom: 4px;
 }
 
 h1 {
   font: var(--font-heading-md);
   color: var(--text-heading);
+  margin-bottom: 40px;
 }
 
 h2 {
   font: var(--font-heading-sm);
   color: var(--text-heading);
+  margin-bottom: 26px;
 }
 
 input {
