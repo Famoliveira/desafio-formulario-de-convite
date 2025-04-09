@@ -1,0 +1,36 @@
+
+#about .inputs form {
+  display: grid;
+  grid-template-areas: 
+  "titulo titulo"
+  "inicio fim"
+  "tipo local"
+  "descricao descricao";
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+.input-wrapper.title {
+  grid-area: titulo;
+}
+
+.input-wrapper.start {
+  grid-area: inicio;
+}
+
+.input-wrapper.end {
+  grid-area: fim;
+}
+
+.input-wrapper.type {
+  grid-area: tipo;
+}
+
+.input-wrapper.local {
+  grid-area: local;
+}
+
+.input-wrapper.description {
+  grid-area: descricao;
+}
