@@ -112,16 +112,30 @@ h1 {
 h2 {
   font: var(--font-heading-sm);
   color: var(--text-heading);
-  margin-bottom: 26px;
 }
 
-input {
+textarea {
+  height: 136px;
+}
+
+input[type="datetime-local"] {
+  color: var(--input-placeholder);
+  text-transform: uppercase;
+
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+}
+
+input,
+textarea {
   width: 100%;
   border: 1px solid var(--input-stroke);
   border-radius: 0.5rem;
   background-color: var(--input-base);
   font: inherit;
-
+  margin-bottom: 1rem;
+  
   padding-inline: 1rem;
   padding-block: 0.8125rem;
 

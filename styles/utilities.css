@@ -1,0 +1,14 @@
+.container {
+  border: 1px solid red;
+  max-width: 1280px;
+  padding-inline: 130px;
+  margin-block: 80px;
+  margin-inline: auto;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
