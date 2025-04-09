@@ -117,12 +117,18 @@ h2 {
 
 input {
   width: 100%;
-  border: none;
+  border: 1px solid var(--input-stroke);
   border-radius: 0.5rem;
   background-color: var(--input-base);
+  font: inherit;
 
   padding-inline: 1rem;
   padding-block: 0.8125rem;
+
+  &::placeholder {
+    color: var(--input-placeholder);
+    font: inherit;
+  }
 }
 
 label {
