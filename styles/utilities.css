@@ -9,5 +9,44 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  margin-top: 48px;
   margin-bottom: 24px;
 }
+
+.radio-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid red;
+
+  & input[type="radio"]:checked + label {
+  border: 2px solid var(--brand-blend-light);
+}
+
+}
+
+.radio-wrapper label {
+  --circle-icon: url(../assets/icons/circles/brand-light.svg) no-repeat center center;
+
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid transparent;
+
+  background: var(--circle-icon);
+
+  border-radius: 100%;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.radio-wrapper input[type="radio"] {
+  display: none;
+}
+
+/* eu preciso que voce coloque para todo input do tipo radio dentro do radio wrapper que estiver marcado ficar com a borda de 2px brand-blend-light, mas isso ja esta, porem eu mosso selecionar multiplas caixas, eu quero que de para selecionar apenas, uma. depois eu quero que voce va mudando o --circle-icon para o restante dos inputs radio, pois cada um tera uma cor seguindo a ordem do html, a que ta por padrao é a ../assets/icons/circles/brand-light.svg ai pras proximas voce vai mudando, é exatamente o nome da cor, entao pro input purple no final voce muda a variavel para purple.svg que ja vai ter a mudança pelo site. */

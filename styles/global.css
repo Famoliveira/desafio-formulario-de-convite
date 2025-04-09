@@ -92,13 +92,6 @@ body {
   overflow: hidden;
 }
 
-.landing-page {
-  padding-block: 80px;
-  padding-inline: 130px;
-  margin-bottom: 48px;
-  border: 1px solid red;
-}
-
 .logo {
   font: var(--font-logo);
   color: var(--accent-pink);
@@ -108,7 +101,6 @@ body {
 h1 {
   font: var(--font-heading-md);
   color: var(--text-heading);
-  margin-bottom: 40px;
 }
 
 h2 {
@@ -167,6 +159,7 @@ input, label, textarea, .segmented-control {
   scale: 1.015;
   & input, textarea, .segmented-control {
     box-shadow: 0 0 0.5rem var(--input-stroke);
+    border: 1px solid var(--brand-mid);
   }
 }
 
