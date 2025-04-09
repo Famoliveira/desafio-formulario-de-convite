@@ -94,6 +94,7 @@ body {
 .landing-page {
   padding-block: 80px;
   padding-inline: 130px;
+  margin-bottom: 48px;
   border: 1px solid red;
 }
 
@@ -115,7 +116,9 @@ h2 {
 }
 
 textarea {
-  height: 136px;
+  min-height: 136px;
+  max-width: 100%;
+  min-width: 272px;
 }
 
 input[type="datetime-local"] {
@@ -128,13 +131,14 @@ input[type="datetime-local"] {
 }
 
 input,
-textarea {
+textarea,
+.segmented-control {
   width: 100%;
   border: 1px solid var(--input-stroke);
   border-radius: 0.5rem;
   background-color: var(--input-base);
   font: inherit;
-  margin-bottom: 1rem;
+  color: var(--text-body);
   
   padding-inline: 1rem;
   padding-block: 0.8125rem;
@@ -149,4 +153,22 @@ label {
   display: block;
   margin-bottom: 0.75rem;
   font: var(--font-body-sm);
+}
+
+input, label, textarea, .segmented-control {
+  transition: all 0.25s ease-in-out;
+}
+
+.input-wrapper:hover,
+.input-wrapper:focus-within {
+  
+  transition: all 0.5s ease-in-out;
+  scale: 1.015;
+  & input, textarea, .segmented-control {
+    box-shadow: 0 0 0.5rem var(--input-stroke);
+  }
+}
+
+.input-wrapper + .input-wrapper {
+  margin-top: 1rem;
 }

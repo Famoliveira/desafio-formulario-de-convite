@@ -1,0 +1,47 @@
+.segmented-control input[type="radio"] {
+  display: none;
+}
+
+.segmented-control {
+  display: flex;
+  padding: 4px;
+  gap: 4px;
+}
+
+.segmented-control > label {
+  margin-bottom: 0;
+  border-radius: 5px;
+  padding: 12px;
+  display: flex; /* Corrigido */
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+  font-size: var(--fs-body-sm);
+  font-weight: var(--fw-regular);
+  color: var(--text-body);
+}
+
+.segmented-control input[type="radio"]:checked + label {
+  background-color: var(--input-stroke);
+  color: var(--text-heading);
+  font-weight: var(--fw-semibold);
+}
+
+#presencial + label {
+  gap: 0;
+  border: 1px solid rebeccapurple;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  line-height: 0;
+}
+
+#presencial + label::before {
+  content: url(../assets/icons/building-2.svg);
+  display: inline-block;
+  margin-right: 0.5rem;          
+}
+
