@@ -10,59 +10,64 @@
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="invite container">
-    <h1>Crie seu convite</h1>
-    <section id="about">
-      <div class="subtitle">
-        <img src="assets/icons/calendar.svg" alt="">
-        <h2>Sobre o evento</h2>
+  <div id="app">
+    <aside>
+      <div class="aside-container">
+        <img src="assets/Logo.svg" alt="">
+        <h1 class="logo">Festivite</h1>
+        <span>Crie um convite digital para o seu evento</span>
       </div>
-      <div class="inputs">
-        <form action="#">
-          <!-- Título do evento -->
-          <div class="input-wrapper title">
-            <label for="title">Título</label>
-            <input type="text" id="title" name="titulo" placeholder="Nome do evento" required>
+    </aside>
+    <main>
+      <div class="main-container container">
+        <h1>Crie seu convite</h1>
+        <section id="about">
+          <div class="subtitle">
+            <img src="assets/icons/calendar.svg" alt="">
+            <h2>Sobre o evento</h2>
           </div>
-      
-          <!-- Início do evento -->
-          <div class="input-wrapper start">
-            <label for="start">Início</label>
-            <input type="datetime-local" id="start" name="inicio" required>
+          <div class="inputs">
+            <form action="#">
+              <div class="input-wrapper title">
+                <label for="title">Título</label>
+                <input type="text" id="title" name="titulo" placeholder="Nome do evento" required>
+              </div>
+          
+              <div class="input-wrapper start">
+                <label for="start">Início</label>
+                <input type="datetime-local" id="start" name="inicio" required>
+              </div>
+          
+              <div class="input-wrapper end">
+                <label for="end">Fim</label>
+                <input type="datetime-local" id="end" name="fim" required>
+              </div>
+          
+              <div class="input-wrapper type">
+                <label for="tipo">Tipo</label>
+                <div class="segmented-control">
+                  <input type="radio" id="presencial" name="tipo" value="presencial" checked>
+                  <label for="presencial">Presencial</label>
+          
+                  <input type="radio" id="online" name="tipo" value="online">
+                  <label for="online">Online</label>
+                </div>
+              </div>
+          
+              <div class="input-wrapper local">
+                <label for="local">Local</label>
+                <input type="text" id="local" name="local" placeholder="Link ou endereço" required>
+              </div>
+          
+              <div class="input-wrapper description">
+                <label for="Description">Descrição</label>
+                <textarea name="descricao" id="Description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+              </div>
+            </form>
           </div>
-      
-          <!-- Fim do evento -->
-          <div class="input-wrapper end">
-            <label for="end">Fim</label>
-            <input type="datetime-local" id="end" name="fim" required>
-          </div>
-      
-          <!-- Tipo de evento -->
-          <div class="input-wrapper type">
-            <label for="tipo">Tipo</label>
-            <div class="segmented-control">
-              <input type="radio" id="presencial" name="tipo" value="presencial" checked>
-              <label for="presencial">Presencial</label>
-      
-              <input type="radio" id="online" name="tipo" value="online">
-              <label for="online">Online</label>
-            </div>
-          </div>
-      
-          <!-- Local do evento -->
-          <div class="input-wrapper local">
-            <label for="local">Local</label>
-            <input type="text" id="local" name="local" placeholder="Link ou endereço" required>
-          </div>
-      
-          <!-- Descrição do evento -->
-          <div class="input-wrapper description">
-            <label for="Description">Descrição</label>
-            <textarea name="descricao" id="Description" placeholder="Escreva sobre os detalhes do evento"></textarea>
-          </div>
-        </form>
+        </section>
       </div>
-    </section>
+    </main>
   </div>
 </body>
 </html>

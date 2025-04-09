@@ -1,0 +1,58 @@
+#app {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  background-color: var(--bg-color);
+  margin-block: 2rem;
+  margin-right: 2rem;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+aside {
+  /* Removendo o background-color que não será mais necessário */
+  background-image: url(../assets/Background.png); /* Substitua pelo caminho correto da sua imagem */
+  background-size: cover; /* Isso faz a imagem cobrir todo o espaço disponível */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  padding-inline: 2rem;
+  padding-top: 2rem;
+  margin-inline: 2rem;
+  margin-block: 2rem;
+  border-radius: 8px;
+
+  h1 {
+    /* Removi a borda vermelha que estava apenas para debug */
+    margin-top: 1rem;
+    /* Talvez seja necessário adicionar sombra ou ajustar a cor para melhor legibilidade sobre a imagem */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  span {
+    display: inline-block;
+    margin-top: 4px;
+    font: var(--font-body-md);
+    color: var(--text-heading);
+    font-weight: lighter;
+    /* Também pode precisar de sombra para melhor legibilidade */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (width < 1280px) {
+  aside {
+    display: none;
+  }
+
+  #app {
+    grid-template-columns: 100%;
+  }
+
+  main {
+    margin-left: 2rem;
+  }
+}

@@ -86,9 +86,10 @@
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: var(--shape-background);
   font: var(--font-body-md);
   color: var(--text-body);
+  overflow: hidden;
 }
 
 .landing-page {
