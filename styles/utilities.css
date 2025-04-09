@@ -13,40 +13,95 @@
   margin-bottom: 24px;
 }
 
+.text-sm {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: var(--fs-body-sm);
+  font-weight: var(--fw-regular);
+  color: var(--text-heading);
+
+}
+
 .radio-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
+}
 
-  & input[type="radio"]:checked + label {
+.radio-wrapper input[type="radio"]:checked + label {
   border: 2px solid var(--brand-blend-light);
 }
 
-}
-
 .radio-wrapper label {
-  --circle-icon: url(../assets/icons/circles/brand-light.svg) no-repeat center center;
-
+  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.274);
   display: flex;
   width: 40px;
   height: 40px;
   padding: 6px;
-  justify-content: center;
   align-items: center;
-
   border: 2px solid transparent;
-
-  background: var(--circle-icon);
-
   border-radius: 100%;
   cursor: pointer;
   margin-bottom: 0;
 }
 
+/* Define o background padrão para o label */
+label[for="brand-light"] {
+  --circle-icon: url(../assets/icons/circles/brand-light.svg) no-repeat center center;
+  background: var(--circle-icon);
+}
+
+label[for="navy"] {
+  --circle-icon: url(../assets/icons/circles/navy.svg) no-repeat center center;
+  background: var(--circle-icon);
+}
+
+label[for="purple"] {
+  --circle-icon: url(../assets/icons/circles/purple.svg) no-repeat center center;
+  background: var(--circle-icon);
+}
+
+label[for="fuschia"] {
+  --circle-icon: url(../assets/icons/circles/fuschia.svg) no-repeat center center;
+  background: var(--circle-icon);
+}
+
+label[for="pink"] {
+  --circle-icon: url(../assets/icons/circles/pink.svg) no-repeat center center;
+  background: var(--circle-icon);
+}
+
+label[for="danger"] {
+  --circle-icon: url(../assets/icons/circles/danger.svg) no-repeat center center;
+  background: var(--circle-icon);
+}
+
+label[for="orange"] {
+  --circle-icon: url(../assets/icons/circles/orange.svg) no-repeat center center;
+  background: var(--circle-icon);
+}
+
+label[for="yellow"] {
+  --circle-icon: url(../assets/icons/circles/yellow.svg) no-repeat center center;
+  background: var(--circle-icon);
+}
+
+label[for="lime"] {
+  --circle-icon: url(../assets/icons/circles/lime.svg) no-repeat center center;
+  background: var(--circle-icon);
+}
+
+label[for="green"] {
+  --circle-icon: url(../assets/icons/circles/green.svg) no-repeat center center;
+  background: var(--circle-icon);
+}
+
+label[for="cyan"] {
+  --circle-icon: url(../assets/icons/circles/cyan.svg) no-repeat center center;
+  background: var(--circle-icon);
+}
+
 .radio-wrapper input[type="radio"] {
   display: none;
 }
-
-/* eu preciso que voce coloque para todo input do tipo radio dentro do radio wrapper que estiver marcado ficar com a borda de 2px brand-blend-light, mas isso ja esta, porem eu mosso selecionar multiplas caixas, eu quero que de para selecionar apenas, uma. depois eu quero que voce va mudando o --circle-icon para o restante dos inputs radio, pois cada um tera uma cor seguindo a ordem do html, a que ta por padrao é a ../assets/icons/circles/brand-light.svg ai pras proximas voce vai mudando, é exatamente o nome da cor, entao pro input purple no final voce muda a variavel para purple.svg que ja vai ter a mudança pelo site. */
