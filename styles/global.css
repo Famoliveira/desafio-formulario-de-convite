@@ -117,6 +117,7 @@ textarea {
 input[type="datetime-local"] {
   color: var(--input-placeholder);
   text-transform: uppercase;
+  cursor: pointer;
 
   &::-webkit-calendar-picker-indicator {
     opacity: 0;
