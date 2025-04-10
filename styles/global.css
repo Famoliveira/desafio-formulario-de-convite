@@ -140,6 +140,13 @@ textarea,
     color: var(--input-placeholder);
     font: inherit;
   }
+
+  /* NOVO CÓDIGO ADICIONADO AQUI */
+  &:focus {
+    outline: none;
+    border-color: var(--brand-mid) !important;
+    box-shadow: 0 0 0.5rem var(--input-stroke);
+  }
 }
 
 label {
@@ -154,15 +161,13 @@ input, label, textarea, .segmented-control {
 
 .input-wrapper:hover,
 .input-wrapper:focus-within {
-  
   transition: all 0.5s ease-in-out;
   scale: 1.015;
-  & input, textarea, .segmented-control {
+  
+  & input, 
+  textarea, 
+  .segmented-control {
     box-shadow: 0 0 0.5rem var(--input-stroke);
-    border: 1px solid var(--brand-mid);
+    border: 1px solid var(--brand-mid) !important;
   }
-}
-
-.input-wrapper + .input-wrapper {
-  margin-top: 1rem;
 }

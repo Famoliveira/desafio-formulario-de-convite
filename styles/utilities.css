@@ -29,10 +29,14 @@
   align-items: center;
 }
 
-.radio-wrapper input[type="radio"]:checked + label {
-  border: 2px solid var(--brand-blend-light);
+
+.radio-wrapper input[type="radio"]:hover + label {
+  border: 2px solid var(--input-stroke);
 }
 
+.radio-wrapper input[type="radio"]:checked + label {
+  border: 2px solid var(--brand-mid);
+}
 .radio-wrapper label {
   box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.274);
   display: flex;
