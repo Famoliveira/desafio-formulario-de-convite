@@ -172,3 +172,54 @@ input, label, textarea, .segmented-control {
     border: 1px solid var(--brand-mid) !important;
   }
 }
+
+/* Adicione este código ao seu arquivo global.css */
+
+/* Estilo para inputs obrigatórios quando inválidos e já interagidos */
+input[required]:invalid:not(:placeholder-shown),
+textarea[required]:invalid:not(:placeholder-shown) {
+  border-color: var(--feedback-danger) !important;
+  box-shadow: 0 0 0.5rem rgba(255, 89, 89, 0.3);
+}
+
+/* Container para mensagens de erro */
+.input-wrapper {
+  position: relative;
+}
+
+/* Elemento que aparecerá apenas quando o input for inválido */
+.input-wrapper input[required]:invalid:not(:placeholder-shown) + .error-message,
+.input-wrapper textarea[required]:invalid:not(:placeholder-shown) + .error-message {
+  display: flex;
+}
+
+/* Estilo base da mensagem de erro */
+.error-message {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: var(--fs-body-xs);
+  color: var(--feedback-danger);
+}
+
+/* Ícone de alerta antes do texto da mensagem */
+.error-message::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../assets/icons/circle-alert.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Ajuste para manter o estilo de erro mesmo em hover/focus */
+.input-wrapper:hover input[required]:invalid:not(:placeholder-shown),
+.input-wrapper:focus-within input[required]:invalid:not(:placeholder-shown),
+.input-wrapper:hover textarea[required]:invalid:not(:placeholder-shown),
+.input-wrapper:focus-within textarea[required]:invalid:not(:placeholder-shown) {
+  border-color: var(--feedback-danger) !important;
+  box-shadow: 0 0 0.5rem rgba(255, 89, 89, 0.3);
+}
