@@ -25,6 +25,7 @@
 
 .input-wrapper.type {
   grid-area: tipo;
+  cursor: pointer;
 }
 
 .input-wrapper.local {
@@ -33,4 +34,9 @@
 
 .input-wrapper.description {
   grid-area: descricao;
+}
+
+.input-wrapper.type .segmented-control,
+.input-wrapper.type .segmented-control label {
+  cursor: pointer;
 }
