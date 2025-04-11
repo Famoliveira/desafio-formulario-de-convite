@@ -9,7 +9,7 @@ main {
   background-color: var(--bg-color);
   margin-block: 2rem;
   margin-right: 2rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   overflow: auto;
 }
 

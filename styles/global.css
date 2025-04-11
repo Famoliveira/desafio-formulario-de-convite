@@ -1,3 +1,4 @@
+/* global.css */
 * {
   margin: 0;
   padding: 0;
@@ -95,7 +96,7 @@ body {
 .logo {
   font: var(--font-logo);
   color: var(--accent-pink);
-  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
 }
 
 h1 {
@@ -109,19 +110,19 @@ h2 {
 }
 
 textarea {
-  min-height: 136px;
+  min-height: 8.5rem;
   max-width: 100%;
-  min-width: 272px;
+  min-width: 17rem;
 }
 
 input[type="datetime-local"] {
   color: var(--input-placeholder);
   text-transform: uppercase;
   cursor: pointer;
+}
 
-  &::-webkit-calendar-picker-indicator {
-    opacity: 0;
-  }
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
 }
 
 input,
@@ -133,21 +134,23 @@ textarea,
   background-color: var(--input-base);
   font: inherit;
   color: var(--text-body);
-  
   padding-inline: 1rem;
   padding-block: 0.8125rem;
+}
 
-  &::placeholder {
-    color: var(--input-placeholder);
-    font: inherit;
-  }
+input::placeholder,
+textarea::placeholder,
+.segmented-control::placeholder {
+  color: var(--input-placeholder);
+  font: inherit;
+}
 
-  /* NOVO CÓDIGO ADICIONADO AQUI */
-  &:focus {
-    outline: none;
-    border-color: var(--brand-mid) !important;
-    box-shadow: 0 0 0.5rem var(--input-stroke);
-  }
+input:focus,
+textarea:focus,
+.segmented-control:focus {
+  outline: none;
+  border-color: var(--brand-mid) !important;
+  box-shadow: 0 0 0.5rem var(--input-stroke);
 }
 
 label {
@@ -164,36 +167,33 @@ input, label, textarea, .segmented-control {
 .input-wrapper:focus-within {
   transition: all 0.5s ease-in-out;
   scale: 1.015;
-  
-  & input, 
-  textarea, 
-  .segmented-control {
-    box-shadow: 0 0 0.5rem var(--input-stroke);
-    border: 1px solid var(--brand-mid) !important;
-  }
 }
 
-/* Adicione este código ao seu arquivo global.css */
+.input-wrapper:hover input,
+.input-wrapper:focus-within input,
+.input-wrapper:hover textarea,
+.input-wrapper:focus-within textarea,
+.input-wrapper:hover .segmented-control,
+.input-wrapper:focus-within .segmented-control {
+  box-shadow: 0 0 0.5rem var(--input-stroke);
+  border: 1px solid var(--brand-mid) !important;
+}
 
-/* Estilo para inputs obrigatórios quando inválidos e já interagidos */
 input[required]:invalid:not(:placeholder-shown),
 textarea[required]:invalid:not(:placeholder-shown) {
   border-color: var(--feedback-danger) !important;
   box-shadow: 0 0 0.5rem rgba(255, 89, 89, 0.3);
 }
 
-/* Container para mensagens de erro */
 .input-wrapper {
   position: relative;
 }
 
-/* Elemento que aparecerá apenas quando o input for inválido */
 .input-wrapper input[required]:invalid:not(:placeholder-shown) + .error-message,
 .input-wrapper textarea[required]:invalid:not(:placeholder-shown) + .error-message {
   display: flex;
 }
 
-/* Estilo base da mensagem de erro */
 .error-message {
   display: none;
   align-items: center;
@@ -203,19 +203,17 @@ textarea[required]:invalid:not(:placeholder-shown) {
   color: var(--feedback-danger);
 }
 
-/* Ícone de alerta antes do texto da mensagem */
 .error-message::before {
   content: '';
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   background-image: url(../assets/icons/circle-alert.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/* Ajuste para manter o estilo de erro mesmo em hover/focus */
 .input-wrapper:hover input[required]:invalid:not(:placeholder-shown),
 .input-wrapper:focus-within input[required]:invalid:not(:placeholder-shown),
 .input-wrapper:hover textarea[required]:invalid:not(:placeholder-shown),

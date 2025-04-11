@@ -6,7 +6,7 @@
   "inicio fim"
   "tipo local"
   "descricao descricao";
-  gap: 16px;
+  gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
 }
