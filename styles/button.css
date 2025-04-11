@@ -1,0 +1,21 @@
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+
+/* botão com um icone atras dele no canto inferior direito do container */
+.btn button {
+  display: flex;
+  gap: 0.75rem;
+  margin-left: auto;
+  background-color: var(--brand-mid);
+  border-radius: 0.5rem;
+  padding-block: 0.8125rem;
+  padding-inline: 1.25rem;
+  width: fit-content;
+
+  font: var(--font-body-md);
+  font-weight: var(--fw-semibold);
+  color: var(--text-heading);
+}

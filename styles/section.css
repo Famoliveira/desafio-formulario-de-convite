@@ -117,3 +117,7 @@ fieldset legend {
 #about .inputs .input-wrapper.description {
   grid-area: descricao;
 }
+
+#terms {
+  margin-bottom: 3rem;
+}

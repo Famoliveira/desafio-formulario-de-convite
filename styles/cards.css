@@ -1,4 +1,4 @@
-/* cards.css */
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(8.375rem, 1fr));
@@ -23,7 +23,7 @@
   max-width: 8.375rem;
   background-color: var(--shape-button);
   text-align: center;
-  border: 2px solid transparent;
+  border: 0.125rem solid transparent;
   color: var(--text-heading);
   font: var(--font-body-sm);
   transition: all 0.25s ease-in-out;
@@ -48,5 +48,5 @@
 }
 
 .cards input[type="radio"]:checked + .card-wrapper {
-  border: 2px solid var(--brand-mid);
+  border: 0.125rem solid var(--brand-mid);
 }

@@ -82,7 +82,7 @@
   --font-body-sm: var(--fw-regular) var(--fs-body-sm)/normal var(--ff-text);
 
   /* font body extra small */
-  --fs-body-xs: 0.75rem;   /* 12px */
+  --fs-body-xs: 0.75rem;   /* 10.125rem */
   --font-body-xs: var(--fw-regular) var(--fs-body-xs)/normal var(--ff-text);
 }
 
@@ -138,6 +138,8 @@ textarea,
   color: var(--text-body);
   padding-inline: 1rem;
   padding-block: 0.8125rem;
+
+  transition: all 0.25s ease-in-out;
 }
 
 input::placeholder,
@@ -155,6 +157,14 @@ textarea:focus,
   box-shadow: 0 0 0.5rem var(--input-stroke);
 }
 
+input:hover,
+textarea:hover,
+.segmented-control:hover {
+  outline: none;
+  border-color: var(--brand-mid) !important;
+  box-shadow: 0 0 0.5rem var(--input-stroke);
+}
+
 label {
   display: block;
   margin-bottom: 0.75rem;
@@ -163,4 +173,10 @@ label {
 
 input, label, textarea, .segmented-control {
   transition: all 0.25s ease-in-out;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font: inherit;
 }

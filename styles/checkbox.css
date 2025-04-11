@@ -1,0 +1,48 @@
+
+.checkbox-wrapper {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 0.75rem;
+
+  & label {
+    margin: 0;
+  }
+
+  & strong {
+    color: var(--brand-blend-light);
+    text-decoration: underline;
+    font-weight: var(--fw-semibold);
+  }
+}
+
+/* Esconde o checkbox nativo */
+.checkbox-wrapper input[type="checkbox"] {
+  all: unset;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+/* Define a imagem do checkbox */
+.checkbox-wrapper .checkbox-img {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: url(../assets/icons/checkbox-unchecked.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Estado de hover e focus */
+.checkbox-wrapper:hover .checkbox-img,
+.checkbox-wrapper:focus-within .checkbox-img {
+  background-image: url(../assets/icons/checkbox-hover.svg);
+}
+
+/* Estado de checked */
+/* Importante: a .checkbox-img deve vir depois do input no HTML para esse seletor funcionar */
+.checkbox-wrapper input[type="checkbox"]:checked ~ .checkbox-img {
+  background-image: url(../assets/icons/checkbox-checked.svg);
+}
