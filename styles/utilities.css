@@ -31,6 +31,14 @@
   color: var(--text-heading);
 }
 
+.divisor {
+  width: 100%;
+  height: 0.125rem;
+  background-color: var(--input-stroke);
+  margin-top: 48px;
+  margin-bottom: 40px;
+}
+
 .radio-wrapper {
   display: flex;
   flex-direction: row;
