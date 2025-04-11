@@ -40,3 +40,25 @@
 .input-wrapper.type .segmented-control label {
   cursor: pointer;
 }
+
+/* Adicione isso ao final do section.css */
+#contact .inputs {
+  display: grid;
+  grid-template-areas: 
+    "name name"
+    "email phone";
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#contact .input-wrapper.name {
+  grid-area: name;
+}
+
+#contact .input-wrapper.email {
+  grid-area: email;
+}
+
+#contact .input-wrapper.phone {
+  grid-area: phone;
+}

@@ -5,12 +5,22 @@
   margin-inline: auto;
 }
 
+.grid {
+  display: grid;
+}
+
 .subtitle {
   display: flex;
   align-items: center;
   gap: 0.75rem;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
+}
+
+#contact > .subtitle {
+  & h2 {
+    margin-top: 4px;
+  }
 }
 
 .text-sm {
