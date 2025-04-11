@@ -3,8 +3,6 @@ button {
   cursor: pointer;
 }
 
-
-/* botão com um icone atras dele no canto inferior direito do container */
 .btn button {
   display: flex;
   gap: 0.75rem;

@@ -1,0 +1,208 @@
+#app {
+  grid-template-columns: 100%;
+  height: auto;
+  overflow: auto;
+}
+
+aside {
+  display: none;
+}
+
+main {
+  margin: 1rem;
+  overflow: visible;
+  height: auto;
+}
+
+.container {
+  padding-inline: 1rem;
+  margin-block: 1.5rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+form {
+  width: 100%;
+}
+
+#about .inputs {
+  grid-template-areas: 
+    "titulo"
+    "inicio"
+    "fim"
+    "tipo"
+    "local"
+    "descricao";
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+#contact .inputs {
+  grid-template-areas: 
+    "name"
+    "email"
+    "phone";
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.input-wrapper {
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+input,
+textarea,
+.segmented-control {
+  width: 100%;
+  padding-inline: 0.75rem;
+  padding-block: 0.75rem;
+}
+
+.radio-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: flex-start;
+}
+
+.radio-wrapper label {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.25rem;
+  margin: 0;
+  min-height: 2.5rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+.cards {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.card-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.segmented-control {
+  padding: 0.15rem;
+}
+
+.segmented-control > label {
+  padding: 0.2rem;
+  font-size: 0.85rem;
+}
+
+.segmented-control label::before {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.checkbox-wrapper {
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.checkbox-wrapper .checkbox-img {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.checkbox-wrapper label {
+  font-size: 0.75rem;
+}
+
+.subtitle {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.subtitle img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn button {
+  width: 85%;
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 0.75rem;
+  gap: 0.5rem;
+}
+
+.btn button img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.divisor {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+fieldset {
+  margin-bottom: 1rem;
+}
+
+#terms {
+  margin-bottom: 2rem;
+}
+
+.main-container {
+  height: auto;
+}
+
+.main-color {
+  margin-bottom: 1.5rem;
+}
+
+body {
+  overflow-y: auto;
+}
+
+button, 
+.segmented-control label,
+.checkbox-wrapper,
+.card-wrapper label {
+  min-height: 44px;
+}
+
+input[type="datetime-local"] {
+  font-size: 0.85rem;
+}
+
+textarea {
+  min-height: 6rem;
+}
+
+footer {
+  padding-bottom: 2rem;
+}
+
+.card-wrapper label {
+  padding: 0;
+}
+
+.card-wrapper span {
+  padding-bottom: 0.5rem;
+  display: block;
+}
