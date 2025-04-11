@@ -1,0 +1,52 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(134px, 1fr));
+  gap: 8px;
+
+  & input[type="radio"] {
+    display: none;
+  }
+
+  & img {
+    width: 100%;
+    padding-inline: 4px;
+    padding-top: 4px;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+  }
+}
+
+.card-wrapper {
+  box-shadow: 0 0 0.9rem rgba(0, 0, 0, 0.281);
+  border-radius: 0.5rem;
+  max-width: 134px;
+  background-color: var(--shape-button);
+  text-align: center;
+  border: 2px solid transparent;
+  color: var(--text-heading);
+  font: var(--font-body-sm);
+  transition: all 0.25s ease-in-out;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-wrapper label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.card-wrapper:hover {
+  box-shadow: 0 0 0.9rem rgba(0, 0, 0, 0.38);
+}
+
+/* Estilo quando o radio está selecionado */
+.cards input[type="radio"]:checked + .card-wrapper {
+  border: 2px solid var(--brand-mid);
+}

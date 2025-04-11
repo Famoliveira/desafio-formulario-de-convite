@@ -109,3 +109,7 @@ label[for="cyan"] {
 .radio-wrapper input[type="radio"] {
   display: none;
 }
+
+.event-theme > span {
+  margin-top: 1rem;
+}
