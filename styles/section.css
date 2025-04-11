@@ -1,4 +1,3 @@
-
 #about .inputs form {
   display: grid;
   grid-template-areas: 
@@ -41,7 +40,6 @@
   cursor: pointer;
 }
 
-/* Adicione isso ao final do section.css */
 #contact .inputs {
   display: grid;
   grid-template-areas: 
@@ -61,4 +59,61 @@
 
 #contact .input-wrapper.phone {
   grid-area: phone;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+fieldset legend {
+  padding: 0;
+  width: 100%;
+  display: block;
+}
+
+#about .inputs {
+  display: grid;
+  grid-template-areas: 
+  "titulo titulo"
+  "inicio fim"
+  "tipo local"
+  "descricao descricao";
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+.subtitle {
+  margin-bottom: 1.5rem;
+}
+
+.input-wrapper {
+  margin-bottom: 0.5rem;
+}
+
+#about .inputs .input-wrapper.title {
+  grid-area: titulo;
+}
+
+#about .inputs .input-wrapper.start {
+  grid-area: inicio;
+}
+
+#about .inputs .input-wrapper.end {
+  grid-area: fim;
+}
+
+#about .inputs .input-wrapper.type {
+  grid-area: tipo;
+}
+
+#about .inputs .input-wrapper.local {
+  grid-area: local;
+}
+
+#about .inputs .input-wrapper.description {
+  grid-area: descricao;
 }

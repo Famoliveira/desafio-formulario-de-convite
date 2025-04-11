@@ -21,13 +21,15 @@
     <main>
       <div class="main-container container">
         <h1>Crie seu convite</h1>
-        <section id="about">
-          <div class="subtitle">
-            <img src="assets/icons/calendar.svg" alt="">
-            <h2>Sobre o evento</h2>
-          </div>
-          <div class="inputs">
-            <form action="#">
+        <form action="#">
+          <fieldset id="about">
+            <legend>
+              <div class="subtitle">
+                <img src="assets/icons/calendar.svg" alt="">
+                <h2>Sobre o evento</h2>
+              </div>
+            </legend>
+            <div class="inputs">
               <div class="input-wrapper title">
                 <label for="title">Título</label>
                 <input type="text" id="title" name="titulo" placeholder="Nome do evento" required>
@@ -63,162 +65,168 @@
                 <label for="Description">Descrição</label>
                 <textarea name="descricao" id="Description" placeholder="Escreva sobre os detalhes do evento"></textarea>
               </div>
-            </form>
-          </div>
-        </section>
-        <section id="personalization">
-          <div class="subtitle">
-            <img src="assets/icons/paintbrush-vertical.svg" alt="">
-            <h2>Personalização</h2>
-          </div>
-          <div class="main-color">
-            <span class="text-sm">Cor principal</span>
-            <div class="radio-wrapper">
-              <input type="radio" name="color" id="brand-light" checked>
-              <label for="brand-light"></label>
-            
-              <input type="radio" name="color" id="navy">
-              <label for="navy"></label>
-            
-              <input type="radio" name="color" id="purple">
-              <label for="purple"></label>
-            
-              <input type="radio" name="color" id="fuschia">
-              <label for="fuschia"></label>
-            
-              <input type="radio" name="color" id="pink">
-              <label for="pink"></label>
-            
-              <input type="radio" name="color" id="danger">
-              <label for="danger"></label>
-            
-              <input type="radio" name="color" id="orange">
-              <label for="orange"></label>
-            
-              <input type="radio" name="color" id="yellow">
-              <label for="yellow"></label>
-            
-              <input type="radio" name="color" id="lime">
-              <label for="lime"></label>
-            
-              <input type="radio" name="color" id="green">
-              <label for="green"></label>
-            
-              <input type="radio" name="color" id="cyan">
-              <label for="cyan"></label>
             </div>
-          </div>
-          <div class="event-theme">
-            <span class="text-sm">Tema do evento</span>
-            <div class="cards">
-              <input type="radio" name="theme" id="birthday" checked>
-              <div class="card-wrapper">
-                <label for="birthday">
-                  <img src="assets/cards img/Image-0.png" alt="">
-                  <span>Aniversário</span>
-                </label>
+          </fieldset>
+          
+          <fieldset id="personalization">
+            <legend>
+              <div class="subtitle">
+                <img src="assets/icons/paintbrush-vertical.svg" alt="">
+                <h2>Personalização</h2>
               </div>
-              <input type="radio" name="theme" id="kids-party">
-              <div class="card-wrapper">
-                <label for="kids-party">
-                  <img src="assets/cards img/Image-1.png" alt="">
-                  <span>Infantil</span>
-                </label>
-              </div>
-              <input type="radio" name="theme" id="formatura">
-              <div class="card-wrapper">
-                <label for="formatura">
-                  <img src="assets/cards img/Image-2.png" alt="">
-                  <span>Formatura</span>
-                </label>
-              </div>
-              <input type="radio" name="theme" id="casamento">
-              <div class="card-wrapper">
-                <label for="casamento">
-                  <img src="assets/cards img/Image-3.png" alt="">
-                  <span>Casamento</span>
-                </label>
-              </div>
-              <input type="radio" name="theme" id="cha-de-bebe">
-              <div class="card-wrapper">
-                <label for="cha-de-bebe">
-                  <img src="assets/cards img/Image-4.png" alt="">
-                  <span>Chá de bebê</span>
-                </label>
-              </div>
-              <input type="radio" name="theme" id="cha-de-panela">
-              <div class="card-wrapper">
-                <label for="cha-de-panela">
-                  <img src="assets/cards img/Image-5.png" alt="">
-                  <span>Chá de panela</span>
-                </label>
-              </div>
-              <input type="radio" name="theme" id="carnaval">
-              <div class="card-wrapper">
-                <label for="carnaval">
-                  <img src="assets/cards img/Image-6.png" alt="">
-                  <span>Carnaval</span>
-                </label>
-              </div>
-              <input type="radio" name="theme" id="pascoa">
-              <div class="card-wrapper">
-                <label for="pascoa">
-                  <img src="assets/cards img/Image-7.png" alt="">
-                  <span>Páscoa</span>
-                </label>
-              </div>
-              <input type="radio" name="theme" id="sao-joao">
-              <div class="card-wrapper">
-                <label for="sao-joao">
-                  <img src="assets/cards img/Image-8.png" alt="">
-                  <span>São João</span>
-                </label>
-              </div>
-              <input type="radio" name="theme" id="halloween">
-              <div class="card-wrapper">
-                <label for="halloween">
-                  <img src="assets/cards img/Image-9.png" alt="">
-                  <span>Halloween</span>
-                </label>
-              </div>
-              <input type="radio" name="theme" id="natal">
-              <div class="card-wrapper">
-                <label for="natal">
-                  <img src="assets/cards img/Image-10.png" alt="">
-                  <span>Natal</span>
-                </label>
-              </div>
-              <input type="radio" name="theme" id="outro">
-              <div class="card-wrapper">
-                <label for="outro">
-                  <img src="assets/cards img/Image-11.png" alt="">
-                  <span>Outro</span>
-                </label>
+            </legend>
+            <div class="main-color">
+              <span class="text-sm">Cor principal</span>
+              <div class="radio-wrapper">
+                <input type="radio" name="color" id="brand-light" checked>
+                <label for="brand-light"></label>
+              
+                <input type="radio" name="color" id="navy">
+                <label for="navy"></label>
+              
+                <input type="radio" name="color" id="purple">
+                <label for="purple"></label>
+              
+                <input type="radio" name="color" id="fuschia">
+                <label for="fuschia"></label>
+              
+                <input type="radio" name="color" id="pink">
+                <label for="pink"></label>
+              
+                <input type="radio" name="color" id="danger">
+                <label for="danger"></label>
+              
+                <input type="radio" name="color" id="orange">
+                <label for="orange"></label>
+              
+                <input type="radio" name="color" id="yellow">
+                <label for="yellow"></label>
+              
+                <input type="radio" name="color" id="lime">
+                <label for="lime"></label>
+              
+                <input type="radio" name="color" id="green">
+                <label for="green"></label>
+              
+                <input type="radio" name="color" id="cyan">
+                <label for="cyan"></label>
               </div>
             </div>
-          </div>
-        </section>
-        <section id="contact">
-          <div class="subtitle">
-            <img src="assets/icons/contact.svg" alt="">
-            <h2>Dados para contato</h2>
-          </div>
-          <div class="inputs grid">
-            <div class="input-wrapper name">
-              <label for="name">Nome</label>
-              <input type="text" id="name" name="name" placeholder="Nome Completo" required>
+            <div class="event-theme">
+              <span class="text-sm">Tema do evento</span>
+              <div class="cards">
+                <input type="radio" name="theme" id="birthday" checked>
+                <div class="card-wrapper">
+                  <label for="birthday">
+                    <img src="assets/cards img/Image-0.png" alt="">
+                    <span>Aniversário</span>
+                  </label>
+                </div>
+                <input type="radio" name="theme" id="kids-party">
+                <div class="card-wrapper">
+                  <label for="kids-party">
+                    <img src="assets/cards img/Image-1.png" alt="">
+                    <span>Infantil</span>
+                  </label>
+                </div>
+                <input type="radio" name="theme" id="formatura">
+                <div class="card-wrapper">
+                  <label for="formatura">
+                    <img src="assets/cards img/Image-2.png" alt="">
+                    <span>Formatura</span>
+                  </label>
+                </div>
+                <input type="radio" name="theme" id="casamento">
+                <div class="card-wrapper">
+                  <label for="casamento">
+                    <img src="assets/cards img/Image-3.png" alt="">
+                    <span>Casamento</span>
+                  </label>
+                </div>
+                <input type="radio" name="theme" id="cha-de-bebe">
+                <div class="card-wrapper">
+                  <label for="cha-de-bebe">
+                    <img src="assets/cards img/Image-4.png" alt="">
+                    <span>Chá de bebê</span>
+                  </label>
+                </div>
+                <input type="radio" name="theme" id="cha-de-panela">
+                <div class="card-wrapper">
+                  <label for="cha-de-panela">
+                    <img src="assets/cards img/Image-5.png" alt="">
+                    <span>Chá de panela</span>
+                  </label>
+                </div>
+                <input type="radio" name="theme" id="carnaval">
+                <div class="card-wrapper">
+                  <label for="carnaval">
+                    <img src="assets/cards img/Image-6.png" alt="">
+                    <span>Carnaval</span>
+                  </label>
+                </div>
+                <input type="radio" name="theme" id="pascoa">
+                <div class="card-wrapper">
+                  <label for="pascoa">
+                    <img src="assets/cards img/Image-7.png" alt="">
+                    <span>Páscoa</span>
+                  </label>
+                </div>
+                <input type="radio" name="theme" id="sao-joao">
+                <div class="card-wrapper">
+                  <label for="sao-joao">
+                    <img src="assets/cards img/Image-8.png" alt="">
+                    <span>São João</span>
+                  </label>
+                </div>
+                <input type="radio" name="theme" id="halloween">
+                <div class="card-wrapper">
+                  <label for="halloween">
+                    <img src="assets/cards img/Image-9.png" alt="">
+                    <span>Halloween</span>
+                  </label>
+                </div>
+                <input type="radio" name="theme" id="natal">
+                <div class="card-wrapper">
+                  <label for="natal">
+                    <img src="assets/cards img/Image-10.png" alt="">
+                    <span>Natal</span>
+                  </label>
+                </div>
+                <input type="radio" name="theme" id="outro">
+                <div class="card-wrapper">
+                  <label for="outro">
+                    <img src="assets/cards img/Image-11.png" alt="">
+                    <span>Outro</span>
+                  </label>
+                </div>
+              </div>
             </div>
-            <div class="input-wrapper email">
-              <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+          </fieldset>
+          
+          <fieldset id="contact">
+            <legend>
+              <div class="subtitle">
+                <img src="assets/icons/contact.svg" alt="">
+                <h2>Dados para contato</h2>
+              </div>
+            </legend>
+            <div class="inputs grid">
+              <div class="input-wrapper name">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Nome Completo" required>
+              </div>
+              <div class="input-wrapper email">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+              </div>
+              <div class="input-wrapper phone">
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999" required>
+              </div>
             </div>
-            <div class="input-wrapper phone">
-              <label for="phone">Telefone</label>
-              <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999" required>
-            </div>
-          </div>
+          </fieldset>
           <div class="divisor"></div>
-        </section>
+        </form>
       </div>
     </main>
   </div>

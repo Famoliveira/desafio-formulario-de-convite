@@ -99,6 +99,7 @@ body {
   margin-bottom: 0.25rem;
 }
 
+
 h1 {
   font: var(--font-heading-md);
   color: var(--text-heading);
@@ -111,8 +112,9 @@ h2 {
 
 textarea {
   min-height: 8.5rem;
+  max-height: 20rem;
   max-width: 100%;
-  min-width: 17rem;
+  min-width: 100%;
 }
 
 input[type="datetime-local"] {
